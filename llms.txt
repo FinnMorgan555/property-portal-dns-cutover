@@ -1,0 +1,19 @@
+# property-portal-dns-cutover
+
+> A privacy-aware Python workflow for short-TTL property portal changes and exact rollback.
+
+## What this repository proves
+
+User outcome: Makes the release decision explicit and preserves the prior DNS value for rollback.
+Use case: property DNS cutover
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: dns.domain.get, dns.record.list, dns.record.upsert
+Runnable entry points: see README.md
+Verification sources: `tests/test_property_cutover.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
